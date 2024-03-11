@@ -668,6 +668,7 @@ width: 45%;
     width: 88%;
     margin-bottom: 28px;
     font-weight: bolder;
+    line-height: 1
 }
 .feedBackForm{
 
@@ -713,7 +714,7 @@ input[type="submit"]{
   background-color: #2f2f2f;
   color: white;
   padding: 14px 0;
-  margin-top: 24px;
+  margin-top: 15px;
 }
 input::placeholder {
   color: black;  
