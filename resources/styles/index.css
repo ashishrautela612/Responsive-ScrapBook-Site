@@ -1,0 +1,1313 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* font-family: "Cardo", serif; */
+
+  /* border: 1px solid red; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #eceaeb;
+  /* background-color: red; */
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  padding: 4% 7% 0% 5%;
+  border-radius: 5px;
+  box-shadow: -2px 7px 5px -6px rgba(0, 0, 0, 0.61);
+  width: 100%;
+  background-color: #eceaeb;
+  z-index: 10;
+
+  /* height: 115px; */
+}
+.navItems {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+  color: rgb(100, 93, 93);
+  font-size: 19px;
+  padding: 5px 18px;
+  transition: all 0.5s ease-in-out;
+}
+#contactUsNav {
+  display: none;
+}
+
+#logoItem {
+  display: none;
+}
+.contactUsBtn {
+  border: 3px solid #040303;
+  border-radius: 7px;
+}
+
+.ri-menu-3-line {
+  display: none;
+}
+/* .contactUs > i{
+    display: none;
+} */
+.contactUsBtn > h3 {
+  padding: 1vh 3vmax;
+  color: #2d2d2d;
+  border: none;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+.navItems > i {
+  font-size: 2vw;
+  display: none;
+}
+
+#home {
+  color: black;
+  font-weight: bolder;
+}
+
+.navItems > a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 22px;
+}
+
+.navItems > a {
+  padding: 5px 18px;
+  transition: all 0.5s ease-in-out;
+  color: rgb(100, 93, 93);
+}
+#home:hover {
+  color: white;
+  border-radius: 22px;
+}
+
+#phoneIcon {
+  display: none;
+  color: black;
+}
+
+.landingPage {
+  padding: 11% 7% 7.6% 7%;
+  font-family: "Cardo", serif;
+  background-image: url(../images/imageTwo.png), url(../images/imageThree.png);
+  background-position: left -14rem top 16rem, right -1rem top 24rem;
+  background-size: 43rem 43rem, 6rem 17rem;
+  background-repeat: no-repeat;
+}
+
+.homeContainer {
+  display: flex;
+  align-items: normal;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 131px;
+}
+
+.mainDescription {
+  width: 37%;
+}
+.mainHeading {
+  font-size: 34px;
+  line-height: 66px;
+  font-weight: bolder;
+}
+
+.description {
+  font-size: 14px;
+  padding-top: 17px;
+  width: 100%;
+  font-weight: bolder;
+}
+
+.reserveTicketBtn {
+  background-color: #2f2f2f;
+  color: white;
+  font-weight: bolder;
+  font-size: 17px;
+  border-radius: 6px;
+  padding: 9px 55px;
+  margin-top: 37px;
+  cursor: pointer;
+  border: none;
+}
+
+.displayImageContainer {
+  width: 50%;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+}
+.imageContainer > img {
+  width: 100%;
+  height: 100%;
+}
+
+.mainHeadingBottom {
+  display: none;
+  font-size: 34px;
+  line-height: 66px;
+  font-weight: bolder;
+}
+
+
+.memories{
+  background-color: #1e1e1e;
+    padding: 4% 35%;
+  font-family: "Cardo", serif;
+  background-image: url(../images/scribble_light_3.png),url(../images/scribble_light_2.png);
+  background-repeat: no-repeat;
+  background-position: left -3rem top 2rem, right -2rem bottom 3rem;
+
+}
+
+.meomoriesMainContainer{
+  display: flex;
+  /* /new wrap */
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meomoriesMainContainer > h1{
+  font-size: 48px;
+  line-height: 0.9;
+  color: white;
+  text-align: center;
+}
+
+.meomoriesMainContainer > p{
+  color: white;
+  text-align: justify;
+  font-size: 14px;
+  text-align-last: center;
+  margin-top: 17px;
+}
+
+.travelLogsBtn{
+  background-color: #1e1e1e;
+  color: white;
+  border: 2px solid white;
+  margin-top: 29px;
+  padding: 10px 46px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.travelsContainer{
+  width: 100%;
+  background-image: url(../images/scribble_dark_6.png),
+    url(../images/scribble_dark_5.png);
+  background-repeat: no-repeat;
+  background-position: left 0px top -4rem, right 0px top 20rem;
+  margin-top: 7%;
+  background-size: 2rem 47rem, 4rem 28rem;
+  font-family: "Cardo", serif;
+}
+.travels{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8% 7% 5% 8%;
+  flex-wrap: wrap;
+}
+
+.travel{
+  display: inline-block;
+  width: 31%;
+  box-shadow: 8px 7px 12px -5px rgba(0, 0, 0, 0.61);
+  padding-bottom: 10px;
+}
+
+.travelImageContainer{
+  width: 100%;
+  margin-bottom: 27px;
+}
+.travelImageContainer > img {
+  width: 100%;
+}
+.barLine{
+  height: 4px;
+  background-color: black;
+  width: 20%;
+  border-radius: 0px 6px 6px 0px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+}
+
+.travelTitle{
+  width: 82%;
+  line-height: 1;
+  margin-bottom: 27px;
+}
+
+.travelDescription{
+  line-height: 1.3;
+  text-align: justify;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.travels .travel:hover {
+  transform: translateY(-10px);
+  transform: scale(1.019,1.019)
+}
+.travel:hover .barLine{
+  width: 80%;
+}
+
+.visitOuter{
+  width: 100%;
+  background-image: url(../images/scribble_dark_4.png),
+    url(../images/scribble_lightest.png);
+  background-repeat: no-repeat;
+  background-position: left 21rem top 34rem, right 0px top 2rem;
+  background-size: 15rem 5rem, 16rem 44rem;
+  padding-bottom: 50px;
+  font-family: "Cardo", serif;
+
+}
+
+.visitPlaces{
+  /* width: 84.6%;
+  margin: auto; */
+  padding: 8% 7% 5% 8%;
+  padding-top: 18%;
+
+}
+
+.seeNewplaces{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 45px;
+   /* /new wrap */
+   flex-wrap: wrap;
+}
+
+.icon{
+  /* margin-bottom: 45px; */
+}
+.icon > img {
+  height: 44px;
+}
+.phrase{
+  padding: 0% 27%;
+  line-height: 1;
+}
+.phrase > h1{
+  font-size: 62px;
+}
+.phrase span {
+  font-style: oblique;
+  text-decoration: underline;
+  font-size: 77px;
+}
+.phraseDesc{
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.featuredPlaceContainer{
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  gap: 43px;
+  margin-top: 140px;
+   /* /new wrap */
+   flex-wrap: wrap;
+}
+
+.leftFeatureContainer{
+  width: 42%;
+  position: relative;
+
+}
+.leftFeatureContainer > img {
+  position: absolute;  
+    bottom: 27%;
+    right: 92%;
+    height: 41%;
+ 
+}
+.leftFeatureContainerImage{
+  width: 100%;
+}
+
+.leftFeatureContainerImage > img {
+  width: 100%;
+}
+.rightFeatureContainer{
+  width: 54%;
+}
+
+.rightFeatureContainerImage{
+margin-bottom: 25px;
+}
+
+.rightFeatureContainerImage > img {
+  width: 300px;
+}
+.rightFeatureContainerText{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+   /* /new wrap */
+   flex-wrap: wrap;
+}
+
+.rightFeatureContainerBold{
+  width: 36%;
+    margin-right: 1px;
+    line-height: 1.5;
+    text-decoration: underline;
+}
+
+.rightFeatureContainerNormalText{
+width: 57%;
+font-size: 16px;
+font-weight: bold;
+padding: 8px 0px 0px 0px;
+}
+
+.rightFeatureContainerNormalText > div {
+  line-height: 1.4;
+    text-align: justify;
+    margin-bottom: 28px;
+}
+.arrow{
+  width: 133px;
+    position: relative;
+    left: 426px;
+    height: 104px;
+}
+.rightFeatureContainerNormalTextUp{
+  display: none;
+  width: 57%;
+font-size: 16px;
+font-weight: bold;
+padding: 8px 0px 0px 0px;
+}
+
+.rightFeatureContainerNormalTextUp > div {
+  line-height: 1.4;
+    text-align: justify;
+    margin-bottom: 28px;
+}
+
+.travelLocation{
+  width: 100%;
+  background-color: #1e1e1e;
+  padding-bottom: 25px;
+  background-image: url(../images//scribble_light.png);
+  background-repeat: no-repeat;
+  background-position: left -1rem bottom -1rem;
+  background-size: 26rem 6rem;
+  color: white;
+
+}
+
+.travelll{
+  justify-content: space-between;
+  display: flex;
+  padding: 8% 0% 1% 8%;
+   /* /new wrap */
+   flex-wrap: wrap;
+
+}
+
+.travelLeft{
+  width: 33%;
+}
+
+.travelheading{
+  font-size: 23px;
+  color: white;
+  line-height: 1.1;
+  font-weight: bolder;
+  margin-bottom: 129px;
+}
+.travellDescription{
+  margin-bottom: 51px;
+    line-height: 1.36;
+    text-align: justify;
+}
+.travelRightContainer{
+  width: 60%;
+}
+
+.travelDescription > h2{
+margin-bottom: 15px;
+}
+
+.travelDescription > p{
+  font-size: 14px;
+}
+.travelRightImageContainer{
+  width: 100%;
+}
+.travelRightImageContainer > img{
+  width: 100%;
+}
+
+.fAQ{
+  padding: 4% 7% 0% 8%;
+  font-family: "Cardo", serif;
+
+}
+
+.fAQcontainer{
+  display: flex;
+   /* /new wrap */
+   flex-wrap: wrap;
+  /* padding: 4% 7% 0% 8%; */
+  justify-content: space-between;
+  padding: 100px 0 140px 0;
+}
+
+.faqLeft{
+  width: 60%
+}
+.faqLeft > h1{
+  font-size: 69px;
+    font-weight: bolder;
+    line-height: 1;
+    margin-bottom: 100px;
+}
+
+.mainLeft{
+
+}
+
+.line{
+  font-size: 13px;
+  padding: 8px 0px 8px 18px;
+}
+
+#line1{
+  border-top: 2px solid black;
+}
+#line2{
+  border-top: 2px solid black;
+  
+}
+
+#line3{
+  border-top: 2px solid black;
+  
+}
+
+#line4{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  
+}
+
+.plus{
+  font-size: 31px;
+  padding-left: 96px;
+  position: relative;
+  top: 7px;
+  cursor: pointer;
+}
+
+.faqRight{
+  width: 33.33%;
+}
+
+.faqRight > img {
+  width: 100%;
+}
+
+
+.aboutUs{
+  padding: 4% 7% 0% 8%;
+  font-family: "Cardo", serif;
+  background-image: url(../images/scribble_dark_2.png), url(../images/scribble_dark_3.png);
+  background-repeat: no-repeat;
+  background-position: left 0rem top 7rem, right 0rem bottom 4rem;
+  background-size: 18rem 8rem, 23rem 6rem;
+  padding-top: 10%;
+  padding-bottom: 13%;
+}
+
+.aboutSection{
+
+}
+.feedBackHeading{
+  text-align: center;
+  line-height: 1;
+  padding: 0% 26%;
+}
+
+.feedBackHeading > h1{
+  font-size: 66px;
+}
+
+.feedBackCardContainer{
+  display: flex;
+   /* /new wrap */
+   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card{
+  display: inline-block;
+  width: 32%;
+  border: 2px solid black;
+  text-align: center;
+  margin-top: 7%;
+  border-radius: 12px;
+  padding-bottom: 4%;
+}
+
+#firstCard{
+position: relative;
+}
+
+.rightArrow{
+  position: absolute;
+  top: 147px;
+  left: -23px;
+  left: -41px;
+  border: 2px solid black;
+  padding: 0px 13px;
+  border-radius: 8px;
+  font-size: 47px;
+  background-color: #eceaeb;
+}
+
+.cardIconContainer{
+  width: 33%;
+  margin: auto;
+  padding-top: 18%;
+}
+.iconContainer{
+
+}
+
+.iconContainer > img {
+
+}
+
+.customerName{
+  margin-top: 30px;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.customerDescription{
+  margin-top: 20px;
+  font-size: 13px;
+  padding: 0 5%;
+  padding-bottom: 2%;
+  font-weight: 600;
+  text-align-last: center;
+}
+
+#secondCard{
+
+}
+
+#thirdCard{
+position: relative;
+}
+
+.leftArrow{
+  position: absolute;
+  top: 147px;
+  right: -41px;
+  border: 2px solid black;
+  padding: 0px 13px;
+  border-radius: 8px;
+  font-size: 47px;
+  background-color: #eceaeb;
+}
+
+.contactForm{
+  padding: 0% 7% 4% 8%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: "Cardo", serif;
+
+}
+
+.form{
+width: 45%;
+}
+
+.form > h1{
+  font-size: 73px;
+    width: 88%;
+    margin-bottom: 28px;
+    font-weight: bolder;
+}
+.feedBackForm{
+
+}
+.feesBackForm > input,textarea{
+  width: 88%;
+}
+
+input, textarea {
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 17px;
+  width: 88%;
+  background-color: #eceaeb;
+  font-family: "Cardo", serif;
+  
+}
+
+input[type="text"]{
+margin-bottom: 23px;
+}
+
+textarea{
+resize: none;
+    margin-bottom: 40px;
+    padding: 10px 0px 27px 10px;
+}
+
+.formSideImage{
+width: 52%;
+}
+
+.formSideImage > img {
+  width: 100%;
+}
+
+input {
+  padding: 10px 0px 10px 10px;
+  
+
+}
+input[type="submit"]{
+  background-color: #2f2f2f;
+  color: white;
+  padding: 14px 0;
+  margin-top: 24px;
+}
+input::placeholder {
+  color: black;  
+}
+
+textarea::placeholder{
+  color:black;
+}
+
+.footer{
+  display: flex;
+    flex-wrap: wrap;
+    padding: 7% 7% 5% 8%;
+    justify-content: space-between;
+    font-family: "Cardo", serif;
+     
+}
+
+.footerLeft{
+  width: 20%;
+}
+
+
+
+.footerLeft > h1{
+  font-size: 45px;
+  position: relative;
+  bottom: 10px;
+  line-height: 1;
+}
+.footerRight{
+  width: 78%;
+}
+
+.footerRight ~ a{
+  text-decoration: none;
+  color: grey;
+}
+.footerRightTop{
+  margin-bottom: 18px;
+}
+
+.footerRightTop > h5{
+  font-size: 20px;
+}
+.footerRightMid{
+  display: flex;
+  /* flex-direction: column; */
+  gap: 16%;
+}
+
+.midOne{
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.midTwo{
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.midThree{
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.midFour{
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.combine > a{
+  color: black;
+}
+
+.footerMain{
+  background-color: #c4c4c4;
+    padding-bottom: 7%;
+    background-image: url(../images/scribble_dark.png);
+    background-position: left 0rem bottom 3rem;
+    background-repeat: no-repeat;
+    background-size: 20rem 8rem;
+}
+
+.footerMain > p {
+  position: relative;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .contactUs {
+    display: none;
+  }
+  .contactUsBtn {
+    display: none;
+  }
+  .contactUsBtn > h3 {
+    display: none;
+  }
+
+  .navBar {
+    width: 100%;
+    padding: 0% 0% 0% 0%;
+    justify-content: space-between;
+  }
+
+  .navItems {
+    font-size: 13px;
+  }
+
+  .landingPage {
+    width: 100%;
+    background-size: 23rem 25rem, 6rem 17rem;
+  }
+
+  .homeContainer {
+    padding-top: 26px;
+    flex-direction: column-reverse;
+    gap: 5px;
+  }
+  .mainDescription {
+    width: 100%;
+  }
+  .mainHeading {
+    display: none;
+    font-size: 1em;
+    line-height: 1;
+  }
+  .mainHeadingBottom{
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1;
+    margin-bottom: 21px;
+    margin-block-start: 20;
+    text-align: center;
+  }
+
+  .description {
+    text-align: justify;
+  }
+  .reserveTicketBtn {
+    font-size: 12px;
+    padding: 9px 19px;
+  }
+  .displayImageContainer {
+    width: 100%;
+  }
+  .imageContainer {
+    width: 100%;
+  }
+.memories{
+  width: 100%;
+    padding: 31% 2%;
+    background-size: 14rem 5rem, 12rem 4rem;
+}
+.meomoriesMainContainer{
+
+}
+
+.meomoriesMainContainer > h1{
+  display: inline-block;
+  font-size: 38px;
+}
+
+.meomoriesMainContainer > p{
+  padding: 0px 32px;
+}
+
+.travelLogsBtn{
+  padding: 5px 40px;
+}
+
+.travelsContainer{
+  width: 100%;
+  background-position: left 0px top -4rem, right 0px top 35rem;
+  background-size: 1.3rem 73rem, 1.2rem 68rem;
+}
+.travels{
+  flex-direction: column;
+}
+
+.travel{
+  width: 100%;
+  margin-bottom: 50px;
+  box-shadow: 8px 7px 12px -5px rgba(0, 0, 0, 0.61);
+}
+
+.travelImageContainer{
+
+}
+
+.barLine{
+
+}
+
+.travelTitle{
+margin-bottom: 12px;
+}
+
+.travelDescription{
+  width: 90%;
+}
+
+.visitOuter{
+background: none;
+}
+
+.visitPlaces{
+  padding: 0% 7% 5% 8%;
+}
+
+
+.seeNewplaces{
+    gap: 10px;
+}
+
+.icon{
+
+}
+
+.phrase{
+  padding: 0% 0%;
+  width: 100%;
+}
+
+.phrase > h1{
+  font-size: 33px;
+  line-height: 1.3;
+}
+
+.phrase span {
+  font-size: 34px;
+}
+#tape{
+  display: none;
+}
+.phraseDesc{
+
+}
+
+.featuredPlaceContainer{
+flex-direction: column;
+margin-top: 25px;
+}
+
+.leftFeatureContainer{
+width: 100%;
+}
+
+.leftFeatureContainerImage{
+
+}
+.rightFeatureContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.rightFeatureContainerImage{
+width: 334px;
+}
+
+.rightFeatureContainerText{
+  flex-direction: column;
+}
+
+.rightFeatureContainerBold{
+width: 100%;
+margin-bottom: 25px;
+}
+
+.rightFeatureContainerNormalText{
+width: 100%;
+display: none;
+}
+
+.arrow{
+  display: none;
+}
+.rightFeatureContainerNormalTextUp{
+  display: block;
+  width: 100%;
+}
+
+.travelLocation{
+  background-position: left -1rem bottom -1rem;
+  background-size: 13rem 4rem;
+}
+
+.travelll{
+  flex-direction: column;
+  padding: 8% 0% 10% 8%;
+}
+
+.travelLeft{
+width: 100%;
+}
+
+.travelheading{
+  font-size: 20px;
+  margin-bottom: 27px;
+  width: 95%;
+}
+.travellDescription{
+width: 90%;
+}
+.travelRightContainer{
+width: 100%;
+}
+
+.travelRightImageContainer{
+  width: 100%;
+}
+.travelRightImageContainer > img {
+  width: 100%;
+}
+
+.fAQ{
+  padding: 4% 7% 0% 8%;
+  font-family: "Cardo", serif;
+
+}
+
+.fAQcontainer{
+  display: flex;
+  /* padding: 4%7% 0% 8%; */
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px 0 30px 0;
+}
+
+.faqLeft{
+  width: 100%
+}
+.faqLeft > h1{
+  font-size: 34px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.mainLeft{
+margin-bottom: 22px;
+}
+
+.line{
+  font-size: 13px;
+  padding: 8px 0px 8px 18px;
+}
+
+#line1{
+  border-top: 2px solid black;
+}
+#line2{
+  border-top: 2px solid black;
+  
+}
+
+#line3{
+  border-top: 2px solid black;
+  
+}
+
+#line4{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  
+}
+
+.plus{
+   display: none;
+}
+
+.faqRight{
+  width: 100%;
+}
+
+.faqRight > img {
+  width: 100%;
+}
+
+.aboutUs{
+  padding: 27% 7% 25% 8%;
+  background-position: left 0rem top 1rem, right 0rem bottom 1rem;
+  background-size: 11rem 5rem, 11rem 4rem;
+}
+
+.aboutSection{
+
+}
+.feedBackHeading{
+  width: 100%;
+  padding: 0% 0%;
+}
+
+.feedBackHeading > h1{
+  display: inline-block;
+  font-size: 46px;
+  width: 100%;
+}
+
+.feedBackCardContainer{
+  flex-direction: column;
+}
+
+.card{
+width: 100%;
+}
+
+#firstCard{
+
+}
+
+.rightArrow{
+display: none;
+}
+
+.cardIconContainer{
+width: 39%;
+}
+.iconContainer{
+
+}
+
+.iconContainer > img {
+
+}
+
+.customerName{
+
+}
+
+.customerDescription{
+
+}
+
+#secondCard{
+
+}
+
+#thirdCard{
+
+}
+
+.leftArrow{
+display: none;
+}
+
+
+
+
+
+.contactForm{
+
+}
+
+.form{
+width: 100%;
+}
+
+.form > h1{
+  font-size: 35px;
+}
+.feedBackForm{
+
+}
+
+input{
+width: 100%;
+}
+
+textarea{
+width: 100%;
+}
+
+.formSideImage{
+  display: none;
+}
+input[type="submit"]{
+  margin-top: 15px;
+}
+
+.footerMain{
+background: none;
+}
+.footer{
+  flex-direction: column;
+}
+
+.footerLeft{
+  width: 100%;
+}
+
+.footerLeft h1{
+
+}
+.footerRight{
+  width: 100%;
+}
+
+.footerRightTop{
+
+}
+
+.footerRightTop > h5{
+
+}
+.footerRightMid{
+  gap: 15%;
+}
+
+.combine{
+  width: 21%
+}
+
+.footerMain > p{
+
+}
+
+.midOne{
+  gap: 19px;
+}
+
+.midTwo{
+  gap: 20px;
+}
+
+.midThree{
+  grid-area: 20px;
+}
+
+.midFour{
+  gap: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
