@@ -872,7 +872,7 @@ textarea::placeholder{
     font-size: 13px;
     position: fixed;
     left: -100%;
-    top:5%;
+    top:7%;
     gap: 0;
     flex-direction: column;
     width: 100%;
