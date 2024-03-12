@@ -303,10 +303,12 @@ transform: scale(1.09,1.09);
 
 .travel{
   display: inline-block;
-  width: 31%;
-  box-shadow: 8px 7px 12px -5px rgba(0, 0, 0, 0.61);
-  padding-bottom: 10px;
-  transition: all 0.3 ease-in-out;
+    width: 31%;
+    box-shadow: 8px 7px 12px -5px rgba(0, 0, 0, 0.61);
+    padding-bottom: 10px;
+    /* padding: 0px 6px 10px 6px; */
+    transition: all 0.3s;
+    background-color: #eceaeb;
 }
 
 .travelImageContainer{
@@ -675,7 +677,7 @@ margin-bottom: 15px;
   justify-content: center;
   align-items: center;
   padding: 4% 0%;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .card:hover {
   transform: scale(1.03,1.03);
@@ -925,13 +927,14 @@ textarea::placeholder{
     padding: 4% 6% 4% 7%;
     justify-content: space-between;
     border-radius: 0 0 5px 5px;
+    position: fixed;
   }
 
   .navItems {
     font-size: 13px;
     position: fixed;
-    left: -100%;
-    top:7%;
+    right: -100%;
+    top:6%;
     gap: 0;
     flex-direction: column;
     width: 100%;
@@ -967,10 +970,11 @@ textarea::placeholder{
     
       }
     .navItems.active{
-      left: 0%;
+      right: 0%;
       z-index: 2;
       background-color:#eceaeb;
       color: white;
+      transition: all 0.45s;
     }
   .menu.active {
 
