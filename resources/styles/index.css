@@ -305,7 +305,7 @@ transform: scale(1.09,1.09);
 .travel{
   display: inline-block;
     width: 31%;
-    box-shadow: 8px 7px 12px -5px rgba(0, 0, 0, 0.61);
+    /* box-shadow: 8px 7px 12px -5px rgba(0, 0, 0, 0.61); */
     padding-bottom: 10px;
     /* padding: 0px 6px 10px 6px; */
     transition: all 0.3s;
@@ -314,7 +314,7 @@ transform: scale(1.09,1.09);
 
 .travelImageContainer{
   width: 100%;
-  margin-bottom: 27px;
+  margin-bottom: 8%;
 }
 .travelImageContainer > img {
   width: 100%;
@@ -324,14 +324,14 @@ transform: scale(1.09,1.09);
   background-color: black;
   width: 20%;
   border-radius: 0px 6px 6px 0px;
-  margin-bottom: 20px;
+  margin-bottom: 8%;
   transition: all 0.5s;
 }
 
 .travelTitle{
   width: 82%;
   line-height: 1;
-  margin-bottom: 27px;
+  margin-bottom: 8%;
   -webkit-text-stroke: 0.7px;
 }
 
@@ -587,7 +587,7 @@ margin-bottom: 15px;
 }
 
 .line{
-  font-size: 13px;
+  font-size: 15px;
   padding: 8px 0px 8px 18px;
 }
 
@@ -612,10 +612,10 @@ margin-bottom: 15px;
 
 .plus{
   font-size: 31px;
-  padding-left: 96px;
-  position: relative;
-  top: 7px;
-  cursor: pointer;
+    padding-left: 81px;
+    position: relative;
+    top: 7px;
+    cursor: pointer;
 }
 
 .faqRight{
@@ -1057,7 +1057,7 @@ textarea::placeholder{
 .travel{
   width: 100%;
   margin-bottom: 50px;
-  box-shadow: 8px 7px 12px -5px rgba(0, 0, 0, 0.61);
+  /* box-shadow: 8px 7px 12px -5px rgba(0, 0, 0, 0.61); */
 }
 
 .travelImageContainer{
@@ -1285,13 +1285,13 @@ margin-bottom: 22px;
 }
 
 .card{
-  width: 80%;
+  width: 100%;
   margin: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 12%;
-  padding: 10% 0%;
+  padding: 16% 0%;
 }
 
 #firstCard{
