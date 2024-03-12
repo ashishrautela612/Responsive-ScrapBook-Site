@@ -759,94 +759,8 @@ textarea::placeholder{
   color:black;
 }
 
-/* .footer{
-  display: flex;
-    flex-wrap: wrap;
-    padding: 7% 7% 5% 8%;
-    justify-content: space-between;
-    font-family: "Cardo", serif;
-     
-}
-
-.footerLeft{
-  width: 20%;
-}
-
-
-
-.footerLeft > h1{
-  font-size: 45px;
-  position: relative;
-  bottom: 10px;
-  line-height: 1;
-}
-.footerRight{
-  width: 78%;
-}
-
-.footerRight ~ a{
-  text-decoration: none;
-  color: grey;
-}
-.footerRightTop{
-  margin-bottom: 18px;
-}
-
-.footerRightTop > h5{
-  font-size: 20px;
-}
-.footerRightMid{
-  display: flex;
-  flex-direction: column;
-  gap: 16%;
-}
-
-.midOne{
-  display: flex;
-  flex-direction: column;
-  gap: 19px;
-}
-
-.midTwo{
-  display: flex;
-  flex-direction: column;
-  gap: 19px;
-}
-
-.midThree{
-  display: flex;
-  flex-direction: column;
-  gap: 19px;
-}
-
-.midFour{
-  display: flex;
-  flex-direction: column;
-  gap: 19px;
-}
-.combine > a{
-  color: black;
-}
-
-.footerMain{
-  background-color: #c4c4c4;
-    padding-bottom: 7%;
-    background-image: url(../images/scribble_dark.png);
-    background-position: left 0rem bottom 3rem;
-    background-repeat: no-repeat;
-    background-size: 20rem 8rem;
-}
-
-.footerMain > p {
-  position: relative;
-  text-align: center;
-} */
-
-
-
-
 .footer{
-  padding: 8% 3% 8% 8%;
+  padding: 7% 3% 7% 8%;
   background-image: url(../images/scribble_dark.png);
   background-repeat: no-repeat;
   background-position: left 0rem bottom 1rem;
@@ -933,6 +847,7 @@ textarea::placeholder{
 
 @media (max-width: 600px) {
   
+   
   .contactUs {
     display: none;
   }
@@ -1035,9 +950,9 @@ textarea::placeholder{
   }
   .reserveTicketBtn {
     font-size: 12px;
-    padding: 9px 19px;
+    padding: 12px 40px;
     position: relative;
-    left: 30%;
+    left: 26%;
   }
   .displayImageContainer {
     width: 100%;
