@@ -914,6 +914,22 @@ textarea::placeholder{
   font-weight: bolder
 }
 
+.menuBtnBurger{
+  display: none;
+  cursor: pointer;
+  color: black;
+}
+
+.menuLine{
+  background-color: black;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition:all 0.3s ease-in-out ;
+  transition:all 0.3s ease-in-out ;
+  color: black;
+}
 
 @media (max-width: 600px) {
   
@@ -927,6 +943,9 @@ textarea::placeholder{
     display: none;
   }
 
+  #contactUsNav{
+    display: block;
+  }
   .navBar {
     width: 100%;
     padding: 4% 6% 4% 7%;
@@ -936,15 +955,50 @@ textarea::placeholder{
 
   .navItems {
     font-size: 13px;
-    display: none;
+    position: fixed;
+    left: -100%;
+    top:5%;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.45s;
+    /* display: none; */
+  }
+
+  .navItems > a{
+    margin: 6px 0;
   }
   .logo{
     display: block;
     font-size: 1.5em;
   }
-  .menuBtn{
+  /* .menuBtn{
     display: block;
     font-size: 1.5em;
+  } */
+
+  .menuBtnBurger{
+    display: block;
+  }
+
+  .menuBtnBurger.active .menuLine:nth-child(2){
+  opacity: 0;
+  }
+  .menuBtnBurger.active .menuLine:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    }
+    .menuBtnBurger.active .menuLine:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+    
+      }
+    .navItems.active{
+      left: 0%;
+      z-index: 2;
+      background-color:#eceaeb;
+      color: white;
+    }
+  .menu.active {
 
   }
 
