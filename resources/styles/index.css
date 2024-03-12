@@ -10,7 +10,9 @@
 
   /* border: 1px solid red; */
 }
-
+input[type="submit"]{
+  cursor: pointer;
+}
 button,a{
   cursor: pointer;
 }
@@ -86,6 +88,48 @@ body {
   border: none;
   cursor: pointer;
   font-size: 19px;
+  position: relative;
+}
+/* .contactUsBtn ~ span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.contactUsBtn:hover span {
+  padding-right: 25px;
+}
+
+.contactUsBtn:hover ~ span:after {
+  opacity: 1;
+  right: 0;
+} */
+
+
+.contactUsBtn h3:after {
+  content: '\00bb';
+  position: absolute;
+  /* font-size: 30px; */
+  opacity: 0;
+  top: 4px;
+  /* bottom: 6px; */
+  right: -10px;
+  transition: 0.5s;
+}
+
+.contactUsBtn:hover h3 {
+  /* padding-right: 25px; */
+}
+
+.contactUsBtn:hover h3:after {
+  opacity: 1;
+  right: 20px;
+   top: 4px; 
+  /* bottom: 6px; */
+
 }
 
 .navItems > i {
@@ -163,8 +207,15 @@ body {
   margin-top: 11%;
   cursor: pointer;
   border: none;
+  transition: all 0.3s ease-in-out;
 }
+.reserveTicketBtn:hover{
+  background-color: #eceaeb;
+  color: #2f2f2f;
+  border:1px solid #2f2f2f;
 
+
+}
 .displayImageContainer {
   width: 50%;
 }
@@ -227,8 +278,11 @@ body {
   padding: 10px 46px;
   border-radius: 5px;
   font-size: 16px;
+  transition: all 0.5s ease-in;
 }
-
+.travelLogsBtn:hover{
+transform: scale(1.09,1.09);
+}
 .travelsContainer{
   width: 100%;
   background-image: url(../images/scribble_dark_6.png),
@@ -252,6 +306,7 @@ body {
   width: 31%;
   box-shadow: 8px 7px 12px -5px rgba(0, 0, 0, 0.61);
   padding-bottom: 10px;
+  transition: all 0.3 ease-in-out;
 }
 
 .travelImageContainer{
@@ -423,7 +478,8 @@ height: 34%;
 .arrow{
   width: 133px;
     position: relative;
-    left: 79%;
+    left: 82%;
+    top: 7%;
     /* height: 104px; */
 }
 .rightFeatureContainerNormalTextUp{
@@ -619,8 +675,11 @@ margin-bottom: 15px;
   justify-content: center;
   align-items: center;
   padding: 4% 0%;
+  transition: all 0.3 ease-in-out;
 }
-
+.card:hover {
+  transform: scale(1.03,1.03);
+}
 #firstCard{
 position: relative;
 }
@@ -1084,6 +1143,7 @@ width: 100%;
 .rightFeatureContainerBold{
 width: 100%;
 margin-bottom: 25px;
+text-align: center;
 }
 
 .rightFeatureContainerNormalText{
@@ -1226,7 +1286,7 @@ margin-bottom: 22px;
   align-items: center;
   justify-content: center;
   margin-top: 12%;
-  padding: 5% 0%;
+  padding: 10% 0%;
 }
 
 #firstCard{
