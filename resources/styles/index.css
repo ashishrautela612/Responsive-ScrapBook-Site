@@ -5,11 +5,15 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+
   /* font-family: "Cardo", serif; */
 
   /* border: 1px solid red; */
 }
 
+button,a{
+  cursor: pointer;
+}
 ::-webkit-scrollbar {
   display: none;
 }
@@ -27,15 +31,20 @@ body {
   width: 100%;
   position: relative;
 }
-
+.logo{
+  display: none;
+}
+.menuBtn{
+  display: none;
+}
 .navBar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   position: fixed;
-  padding: 4% 7% 0% 5%;
-  border-radius: 5px;
+  padding: 3% 7% 1% 5%;
+  border-radius: 0px 0px 5px 5px;
   box-shadow: -2px 7px 5px -6px rgba(0, 0, 0, 0.61);
   width: 100%;
   background-color: #eceaeb;
@@ -134,11 +143,12 @@ body {
   font-size: 34px;
   line-height: 66px;
   font-weight: bolder;
+  -webkit-text-stroke: 1px;
 }
 
 .description {
   font-size: 14px;
-  padding-top: 17px;
+  padding-top: 4%;
   width: 100%;
   font-weight: bolder;
 }
@@ -150,7 +160,7 @@ body {
   font-size: 17px;
   border-radius: 6px;
   padding: 9px 55px;
-  margin-top: 37px;
+  margin-top: 11%;
   cursor: pointer;
   border: none;
 }
@@ -252,7 +262,7 @@ body {
   width: 100%;
 }
 .barLine{
-  height: 4px;
+  height: 3px;
   background-color: black;
   width: 20%;
   border-radius: 0px 6px 6px 0px;
@@ -264,13 +274,15 @@ body {
   width: 82%;
   line-height: 1;
   margin-bottom: 27px;
+  -webkit-text-stroke: 0.7px;
 }
 
 .travelDescription{
   line-height: 1.3;
-  text-align: justify;
-  font-size: 13px;
-  font-weight: bold;
+    text-align: justify;
+    font-size: 14px;
+    color: #0b0a0a;
+    font-family: sans-serif;
 }
 
 .travels .travel:hover {
@@ -339,7 +351,7 @@ body {
   /* align-items: center; */
   /* justify-content: space-between; */
   gap: 43px;
-  margin-top: 140px;
+  margin-top: 18%;
    /* /new wrap */
    flex-wrap: wrap;
 }
@@ -350,10 +362,11 @@ body {
 
 }
 .leftFeatureContainer > img {
-  position: absolute;  
-    bottom: 27%;
-    right: 92%;
-    height: 41%;
+  position: absolute;
+  bottom: 34%;
+  right: 93%;
+  height: 32%;
+
  
 }
 .leftFeatureContainerImage{
@@ -369,43 +382,49 @@ body {
 
 .rightFeatureContainerImage{
 margin-bottom: 25px;
+height: 34%;
 }
 
 .rightFeatureContainerImage > img {
-  width: 300px;
+  width: 63%;
+  height: 100%;
 }
 .rightFeatureContainerText{
   display: flex;
   justify-content: space-between;
   align-items: start;
+  padding-top: 9%;
    /* /new wrap */
    flex-wrap: wrap;
 }
 
 .rightFeatureContainerBold{
-  width: 36%;
-    margin-right: 1px;
-    line-height: 1.5;
-    text-decoration: underline;
+  width: 30%;
+  font-size: 14px;
+  /* margin-right: 1px; */
+  line-height: 1.5;
+  text-decoration: underline;
+  -webkit-text-stroke: 1px
 }
 
 .rightFeatureContainerNormalText{
-width: 57%;
-font-size: 16px;
-font-weight: bold;
-padding: 8px 0px 0px 0px;
+  width: 60%;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 0px 0px 0px;
+  word-spacing: 0.9px;
 }
 
 .rightFeatureContainerNormalText > div {
   line-height: 1.4;
     text-align: justify;
-    margin-bottom: 28px;
+    margin-bottom: 9%;
 }
 .arrow{
   width: 133px;
     position: relative;
-    left: 426px;
-    height: 104px;
+    left: 79%;
+    /* height: 104px; */
 }
 .rightFeatureContainerNormalTextUp{
   display: none;
@@ -451,10 +470,12 @@ padding: 8px 0px 0px 0px;
   color: white;
   line-height: 1.1;
   font-weight: bolder;
-  margin-bottom: 129px;
+  bottom: 2%;
+  position: relative;
+  margin-bottom: 24%;
 }
 .travellDescription{
-  margin-bottom: 51px;
+  margin-bottom: 13%;
     line-height: 1.36;
     text-align: justify;
 }
@@ -462,12 +483,13 @@ padding: 8px 0px 0px 0px;
   width: 60%;
 }
 
-.travelDescription > h2{
+/* .travellDescription > h2{
 margin-bottom: 15px;
-}
+} */
 
-.travelDescription > p{
-  font-size: 14px;
+.travellDescription > p{
+  padding-top: 5%;
+  font-size: 16px;
 }
 .travelRightImageContainer{
   width: 100%;
@@ -578,13 +600,25 @@ margin-bottom: 15px;
 }
 
 .card{
-  display: inline-block;
+  /* display: inline-block;
   width: 32%;
   border: 2px solid black;
   text-align: center;
   margin-top: 7%;
   border-radius: 12px;
-  padding-bottom: 4%;
+  padding-bottom: 4%; */
+
+  display: flex;
+  border: 2px solid black;
+  text-align: center;
+  margin-top: 7%;
+  border-radius: 12px;
+  /* padding-bottom: 4%; */
+  flex-direction: column;
+  width: 32%;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 0%;
 }
 
 #firstCard{
@@ -599,14 +633,14 @@ position: relative;
   border: 2px solid black;
   padding: 0px 13px;
   border-radius: 8px;
-  font-size: 47px;
+  font-size: 40px;
   background-color: #eceaeb;
 }
 
 .cardIconContainer{
-  width: 33%;
+  /* width: 33%;
   margin: auto;
-  padding-top: 18%;
+  padding-top: 18%; */
 }
 .iconContainer{
 
@@ -626,7 +660,7 @@ position: relative;
   margin-top: 20px;
   font-size: 13px;
   padding: 0 5%;
-  padding-bottom: 2%;
+  /* padding-bottom: 2%; */
   font-weight: 600;
   text-align-last: center;
 }
@@ -646,7 +680,7 @@ position: relative;
   border: 2px solid black;
   padding: 0px 13px;
   border-radius: 8px;
-  font-size: 47px;
+  font-size: 40px;
   background-color: #eceaeb;
 }
 
@@ -703,6 +737,7 @@ width: 52%;
 
 .formSideImage > img {
   width: 100%;
+  height: 100%;
 }
 
 input {
@@ -724,7 +759,7 @@ textarea::placeholder{
   color:black;
 }
 
-.footer{
+/* .footer{
   display: flex;
     flex-wrap: wrap;
     padding: 7% 7% 5% 8%;
@@ -762,7 +797,7 @@ textarea::placeholder{
 }
 .footerRightMid{
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   gap: 16%;
 }
 
@@ -805,47 +840,83 @@ textarea::placeholder{
 .footerMain > p {
   position: relative;
   text-align: center;
+} */
+
+
+
+
+.footer{
+  padding: 8% 3% 8% 8%;
+  background-image: url(../images/scribble_dark.png);
+  background-repeat: no-repeat;
+  background-position: left 0rem bottom 1rem;
+  background-size: 17rem 8rem;
+  background-color: #c5c5c5;
 }
 
 
+.footerContent{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3%;
+}
 
 
+.footerContentLeft {
+  width: 25%;
+  font-size: 29px;
+  line-height: 1
+}
 
+.footerContentRight{
+  width: 72%;
+}
 
+.quickLinks{
+  padding-bottom: 4%;
+}
 
+.redirectLinksOne,.redirectLinksTwo,.redirectLinksThree{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 3%;
+}
 
+.footerAnchor{
+  width: 22%;
+  color: black;
+}
 
+.copyRight{
+  text-align: center;
+  cursor: pointer;
+}
 
+.createMemoryContainerTextThree {
+  border: 1px solid white;
+  padding: 1% 0.5%;
+  border-radius: 4px;
+  transition: 0.3s;
+  width: 23%;
+}
 
+.redirectLinksPhone{
+  display: flex;
+  display: none;
+}
 
+.footerAnchor,.footerAnchorGap a{
+  cursor: pointer;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footerAnchor:hover,.footerAnchorGap a:hover{
+  font-weight: bolder
+}
 
 
 @media (max-width: 600px) {
+  
   .contactUs {
     display: none;
   }
@@ -858,17 +929,29 @@ textarea::placeholder{
 
   .navBar {
     width: 100%;
-    padding: 0% 0% 0% 0%;
+    padding: 4% 6% 4% 7%;
     justify-content: space-between;
+    border-radius: 0 0 5px 5px;
   }
 
   .navItems {
     font-size: 13px;
+    display: none;
+  }
+  .logo{
+    display: block;
+    font-size: 1.5em;
+  }
+  .menuBtn{
+    display: block;
+    font-size: 1.5em;
+
   }
 
   .landingPage {
     width: 100%;
     background-size: 23rem 25rem, 6rem 17rem;
+    background-image: none;
   }
 
   .homeContainer {
@@ -899,6 +982,8 @@ textarea::placeholder{
   .reserveTicketBtn {
     font-size: 12px;
     padding: 9px 19px;
+    position: relative;
+    left: 30%;
   }
   .displayImageContainer {
     width: 100%;
@@ -930,8 +1015,7 @@ textarea::placeholder{
 
 .travelsContainer{
   width: 100%;
-  background-position: left 0px top -4rem, right 0px top 35rem;
-  background-size: 1.3rem 73rem, 1.2rem 68rem;
+   background-image: none
 }
 .travels{
   flex-direction: column;
@@ -957,10 +1041,11 @@ margin-bottom: 12px;
 
 .travelDescription{
   width: 90%;
+  word-spacing: -2px;
 }
 
 .visitOuter{
-background: none;
+background-image: none;
 }
 
 .visitPlaces{
@@ -970,6 +1055,7 @@ background: none;
 
 .seeNewplaces{
     gap: 10px;
+    padding-bottom: 10%;
 }
 
 .icon{
@@ -1015,9 +1101,13 @@ width: 100%;
 }
 
 .rightFeatureContainerImage{
-width: 334px;
+width: 100%;
 }
 
+
+.rightFeatureContainerImage > img {
+  width: 100%;
+}
 .rightFeatureContainerText{
   flex-direction: column;
 }
@@ -1041,8 +1131,7 @@ display: none;
 }
 
 .travelLocation{
-  background-position: left -1rem bottom -1rem;
-  background-size: 13rem 4rem;
+   background-image: none;
 }
 
 .travelll{
@@ -1140,8 +1229,7 @@ margin-bottom: 22px;
 
 .aboutUs{
   padding: 27% 7% 25% 8%;
-  background-position: left 0rem top 1rem, right 0rem bottom 1rem;
-  background-size: 11rem 5rem, 11rem 4rem;
+  background-image: none;
 }
 
 .aboutSection{
@@ -1163,7 +1251,13 @@ margin-bottom: 22px;
 }
 
 .card{
-width: 100%;
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12%;
+  padding: 5% 0%;
 }
 
 #firstCard{
@@ -1175,7 +1269,7 @@ display: none;
 }
 
 .cardIconContainer{
-width: 39%;
+width: 100%;
 }
 .iconContainer{
 
@@ -1219,6 +1313,8 @@ width: 100%;
 
 .form > h1{
   font-size: 35px;
+  position: relative;
+    left: 20%;
 }
 .feedBackForm{
 
@@ -1239,76 +1335,67 @@ input[type="submit"]{
   margin-top: 15px;
 }
 
-.footerMain{
-background: none;
-}
+ 
 .footer{
+  padding: 6% 7% 7% 8%;
+  background-image: none;
+}
+
+.footerContent{
+  width: 100%;
   flex-direction: column;
 }
 
-.footerLeft{
+.footerContentLeft{
+  width: 100%;
+  padding-bottom: 8%;
+}
+
+.footerContentLeft h1{
+  display: inline;
+  font-size: 1.4em;
+}
+
+.footerContentRight{
+  width: 100%;
+  padding-right: 0;
+}
+
+.footerAnchor{
+  font-size: 10px;
+}
+
+.quickLinks{
+  text-align: center;
+  font-size: 1em;
+  display: none;
+}
+
+.copyRight{
+  font-size: 12px;
+  padding-top: 3%;
+  padding-bottom: 4%;
+}
+
+.redirectLinksPc{
+  display: none;
+}
+
+.redirectLinksPhone{
+  display: block;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 
-.footerLeft h1{
-
-}
-.footerRight{
-  width: 100%;
+.redirectLinksPhone a{
+  color: black;
+  font-size: 13px;
 }
 
-.footerRightTop{
-
+.footerAnchorGap{
+  padding-bottom: 7%;
 }
 
-.footerRightTop > h5{
-
 }
-.footerRightMid{
-  gap: 15%;
-}
-
-.combine{
-  width: 21%
-}
-
-.footerMain > p{
-
-}
-
-.midOne{
-  gap: 19px;
-}
-
-.midTwo{
-  gap: 20px;
-}
-
-.midThree{
-  grid-area: 20px;
-}
-
-.midFour{
-  gap: 8px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
+ 
